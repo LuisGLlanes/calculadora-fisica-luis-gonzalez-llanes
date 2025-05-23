@@ -1,0 +1,125 @@
+{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #2d2d44);
+  margin: 0;
+  padding: 20px;
+  color: #eee;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: linear-gradient(145deg, #2c2c3d, #3b3b52);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  border: 1px solid #444;
+}
+
+h1 {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+p {
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 25px;
+  color: #aaa;
+}
+
+.dropdown {
+  margin-bottom: 25px;
+}
+
+.dropdown label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #bbb;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: none;
+  background-color: #222;
+  color: #eee;
+  appearance: none;
+}
+
+.form-section {
+  background: linear-gradient(140deg, #333, #444);
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #555;
+  /* Animación simple */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Animación sencilla - fade + subida ligera */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-section h2 {
+  color: #ddd;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  background-color: #1c1c2b;
+  color: #fff;
+}
+
+button {
+  background: linear-gradient(45deg, #4a4a6a, #666688);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #5a5a7a, #777799);
+}
+
+#resultado {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #ccccff;
+  font-weight: bold;
+}
