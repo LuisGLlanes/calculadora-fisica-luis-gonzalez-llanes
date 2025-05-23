@@ -168,13 +168,13 @@ document.getElementById("seccionSelector").addEventListener("change", function (
   const sec = secciones[selected];
 
   const formSection = document.createElement("div");
-  formSection.className = "form-section";
+  formSection.className = "form-section"; // Clase usada en CSS
 
   const title = document.createElement("h2");
   title.textContent = sec.titulo;
   formSection.appendChild(title);
 
-  sec.campos.forEach(campo => {
+  sec.campos.forEach((campo) => {
     const group = document.createElement("div");
     group.className = "input-group";
 
@@ -206,4 +206,8 @@ document.getElementById("seccionSelector").addEventListener("change", function (
   formSection.appendChild(resultDiv);
 
   container.appendChild(formSection);
+
+  // Activar animación simple
+  void formSection.offsetWidth; // Reinicia la transición
+  formSection.classList.add("show");
 });
